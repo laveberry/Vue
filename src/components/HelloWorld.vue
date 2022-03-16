@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <CheckBox/>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -84,7 +85,13 @@
 </template>
 
 <script>
+  import CheckBox from '/checkdox'
+
 export default {
+  components : {
+    CheckBox
+  },
+
   name: 'HelloWorld',
   data () {
     return {
